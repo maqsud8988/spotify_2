@@ -1,6 +1,6 @@
 from django.urls import path, include
 
-from api.views import (CountryAPIViewSet, ProductAPIViewSet, UserAPIViewSet, CityAPIViewSet, AddressAPIViewSet,
+ from api.views import (CountryAPIViewSet, ProductAPIViewSet, UserAPIViewSet, CityAPIViewSet, AddressAPIViewSet,
                        DeliveryAPIViewSet, PaymentsAPIViewSet, ProductTypesAPIViewSet, CommentsAPIViewSet, CategoriesAPIViewSet,
                        PaymentStatusesAPIViewSet, PaymentTypesAPIViewSet, TestimonialsAPIViewSet)
 from rest_framework.routers import DefaultRouter
