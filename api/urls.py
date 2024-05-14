@@ -1,8 +1,8 @@
 from django.urls import path, include
 
- from api.views import (CountryAPIViewSet, ProductAPIViewSet, UserAPIViewSet, CityAPIViewSet, AddressAPIViewSet,
+from api.views import (CountryAPIViewSet, ProductAPIViewSet, UserAPIViewSet, CityAPIViewSet, AddressAPIViewSet,
                        DeliveryAPIViewSet, PaymentsAPIViewSet, ProductTypesAPIViewSet, CommentsAPIViewSet, CategoriesAPIViewSet,
-                       PaymentStatusesAPIViewSet, PaymentTypesAPIViewSet, TestimonialsAPIViewSet)
+                       PaymentTypesAPIViewSet, TestimonialsAPIViewSet)
 from rest_framework.routers import DefaultRouter
 from rest_framework.authtoken import views
 
@@ -18,7 +18,6 @@ router.register("payment", viewset=PaymentsAPIViewSet)
 router.register("product-type", viewset=ProductTypesAPIViewSet)
 router.register("comments", viewset=CommentsAPIViewSet)
 router.register("category", viewset=CategoriesAPIViewSet)
-router.register("payment-status", viewset=PaymentStatusesAPIViewSet)
 router.register("payment-type", viewset=PaymentTypesAPIViewSet)
 router.register("testimonial", viewset=TestimonialsAPIViewSet)
 
